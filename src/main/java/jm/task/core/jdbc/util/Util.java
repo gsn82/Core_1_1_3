@@ -14,10 +14,10 @@ public class Util {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-            System.out.println("connection ok");
+          //  System.out.println("connection ok");
         } catch (SQLException | ClassNotFoundException ex) {
             ex.printStackTrace();
-            System.out.println("connection error");
+          //  System.out.println("connection error");
         }
         return connection;
     }
